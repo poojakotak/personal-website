@@ -30,8 +30,8 @@ function Portfolio() {
   ];
 
   return (
-    <section id="portfolio" className="pl-[25%] w-full h-screen bg-gray-100 flex items-center justify-center">
-      <div className="max-w-3xl mx-auto text-center">
+    <section id="portfolio" className="md:pl-[25%] w-full h-screen bg-gray-100 flex items-center justify-center">
+      <div className="max-w-3xl mx-auto p-4 text-center">
         <h2 className="text-5xl font-bold text-gray-800 mb-6">Portfolio</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {portfolioItems.map((item, index) => (

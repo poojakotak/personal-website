@@ -5,8 +5,8 @@ import placeholderImage from '../about.jpeg'; // Replace with the path to your i
 
 function About() {
     return (
-      <section id="about" className="pl-[25%] w-full h-screen flex items-center justify-center bg-gray-100">
-        <div className="max-w-2xl mx-auto text-center">
+      <section id="about" className="md:pl-[25%] w-full h-screen flex items-center justify-center bg-gray-100">
+        <div className="max-w-2xl mx-auto p-4 text-center">
           <img src={placeholderImage} alt="Pooja Kotak" className="rounded-full mx-auto mb-4 w-40 h-40 object-cover" />
           <h2 className="text-5xl font-bold mb-3">Hi! I'm Pooja Kotak,</h2>
           <p className="mb-2 text-l font-bold">an experienced software engineer aspiring to transition into product management.</p>

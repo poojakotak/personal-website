@@ -19,8 +19,8 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="pl-[25%] w-full h-screen bg-white flex items-center justify-center">
-      <div className="max-w-3xl mx-auto text-center">
+    <section id="contact" className="md:pl-[25%] w-full h-screen bg-white flex items-center justify-center">
+      <div className="max-w-3xl mx-auto p-4 text-center">
           <h2 className="text-5xl font-bold text-gray-800 mb-4">Contact Me</h2>
           <p className="mb-6 text-gray-600">Feel free to reach out for collaboration or just a friendly hello!</p>
       <form ref={form} onSubmit={sendEmail} className="space-y-4">
