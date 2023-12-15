@@ -1,0 +1,11 @@
+/* src/styles/Contact.css */
+
+  @media screen and (max-width: 600px) {
+    #contact {
+      padding: 1em;
+    }
+  
+    #contact p {
+      font-size: 1em;
+    }
+  }

@@ -1,0 +1,31 @@
+/* src/styles/Header.css */
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    nav {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    /* Add styles for collapsed menu */
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    nav {
+      padding: 0.5em; /* Reduced padding for smaller screens */
+    }
+  
+    nav ul {
+      flex-direction: column; /* Stack the links vertically */
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin-bottom: 0.5em; /* Add space between vertically stacked links */
+    }
+  
+    nav ul li a {
+      font-size: 1.2em; /* Increase font size for better readability on small screens */
+    }
+  }

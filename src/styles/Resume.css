@@ -1,0 +1,15 @@
+/* src/styles/Resume.css */
+
+@media screen and (max-width: 600px) {
+    #resume {
+      padding: 1em;
+    }
+  
+    #resume h2, #resume h3 {
+      font-size: 1.2em;
+    }
+  
+    #resume p {
+      font-size: 0.9em;
+    }
+  }

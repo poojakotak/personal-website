@@ -1,0 +1,15 @@
+/* src/styles/Portfolio.css */
+
+  @media screen and (max-width: 600px) {
+    #portfolio {
+      padding: 1em;
+    }
+  
+    #portfolio .project h3 {
+      font-size: 1.2em;
+    }
+  
+    #portfolio .project p {
+      font-size: 0.9em;
+    }
+  }

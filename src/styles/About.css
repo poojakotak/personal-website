@@ -1,0 +1,16 @@
+/* src/styles/About.css */
+
+  @media screen and (max-width: 600px) {
+    #about {
+      padding: 1em;  /* Reduced padding for smaller screens */
+      text-align: center;
+    }
+  
+    #about h2 {
+      font-size: 1.5em;  /* Slightly larger heading for readability */
+    }
+  
+    #about p {
+      font-size: 1em;  /* Adjusted paragraph font size for smaller screens */
+    }
+  }
