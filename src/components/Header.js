@@ -5,7 +5,7 @@ import '../styles/Header.css';
 
 function Header() {
   return (
-    <header className="hidden md:block md:w-1/4 h-screen bg-gray-800 text-white fixed">
+    <header className="md:w-1/4 w-full md:h-screen h-auto bg-gray-800 text-white fixed md:flex-col flex-row">
       <div className="flex flex-col h-full">
         <div className="text-center p-4">
         </div>
