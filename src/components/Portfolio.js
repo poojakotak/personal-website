@@ -26,6 +26,13 @@ function Portfolio() {
       delivery_link: "https://docs.google.com/document/d/1fFh6wm1nJTQ4bO6sZbyphBG1Yi9rxqaiLATvNuvkcs0/edit?usp=sharing",
       image: captionsImage
     },
+    {
+        title: "Personal Website",
+        description: "Built the website you're looking at!",
+        detailed_description: "Built my personal website using React and Tailwind CSS.",
+        github_link: "https://github.com/poojakotak/personal-website",
+        image: captionsImage
+    },
     // Add more items here...
   ];
 
@@ -44,23 +51,32 @@ function Portfolio() {
         </div>
       </div>
 
-      {/* Modal */}
-      {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-10">
-          <div className="bg-white p-4 rounded-lg max-w-xl w-full">
-            <h3 className="text-xl font-semibold">{selectedItem.title}</h3>
-            <p>{selectedItem.detailed_description}</p>
-            <a href={selectedItem.product_link} target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700 block mt-2">View Product Brief for the engineering team</a>
-            <a href={selectedItem.design_link} target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700 block mt-2">View Design Brief for the design team</a>
-            <a href={selectedItem.delivery_link} target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700 block mt-2">View Delivery Plan for the marketing and customer experience teams</a>
-            <div className="mt-4">
-              <button onClick={closeModal} className="bg-red-500 text-white px-4 py-2 rounded block w-full">Close</button>
+    {/* Modal */}
+    {isModalOpen && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-10">
+            <div className="bg-white p-4 rounded-lg max-w-xl w-full">
+              <h3 className="text-xl font-semibold">{selectedItem.title}</h3>
+              <p>{selectedItem.detailed_description}</p>
+              {selectedItem.product_link && (
+                <a href={selectedItem.product_link} target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700 block mt-2">View Product Brief for the engineering team</a>
+              )}
+              {selectedItem.design_link && (
+                <a href={selectedItem.design_link} target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700 block mt-2">View Design Brief for the design team</a>
+              )}
+              {selectedItem.delivery_link && (
+                <a href={selectedItem.delivery_link} target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700 block mt-2">View Delivery Plan for the marketing and customer experience teams</a>
+              )}
+              {selectedItem.github_link && (
+                <a href={selectedItem.github_link} target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700 block mt-2">View GitHub</a>
+              )}
+              <div className="mt-4">
+                <button onClick={closeModal} className="bg-red-500 text-white px-4 py-2 rounded block w-full">Close</button>
+              </div>
             </div>
           </div>
-        </div>
-      )}
-    </section>
-  );
-}
+        )}
+      </section>
+      );
+    }
 
 export default Portfolio;
