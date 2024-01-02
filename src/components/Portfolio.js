@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import '../styles/Portfolio.css';
 import captionsImage from '../captionsai.png';
+import websiteImage from '../poojawho.png';
 
 function Portfolio() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -31,7 +32,7 @@ function Portfolio() {
         description: "Built the website you're looking at!",
         detailed_description: "Built my personal website using React and Tailwind CSS.",
         github_link: "https://github.com/poojakotak/personal-website",
-        image: captionsImage
+        image: websiteImage
     },
     // Add more items here...
   ];
