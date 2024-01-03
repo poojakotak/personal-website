@@ -20,6 +20,9 @@ function Header() {
               <a href="#portfolio" className="text-lg hover:text-gray-300">Portfolio</a>
             </li>
             <li>
+              <a href="#hobbies" className="text-lg hover:text-gray-300">Hobbies</a>
+            </li>
+            <li>
               <a href="#contact" className="text-lg hover:text-gray-300">Contact Me</a>
             </li>
           </ul>

@@ -5,6 +5,7 @@ import About from './components/About';
 import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Hobbies from './components/Hobbies';
 // Import other components here
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <About />
         <Resume />
         <Portfolio />
+        <Hobbies />
         <Contact />
       </div>
     </Router>
