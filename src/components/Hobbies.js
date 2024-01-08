@@ -10,7 +10,7 @@ function Hobbies() {
     },
     {
       name: 'Running',
-      description: 'Tracking my running progress and journey.',
+      description: 'Tracking my running progress and fitness journey.',
       trackerLink: 'https://www.strava.com/athletes/129411536',
     },
     {
