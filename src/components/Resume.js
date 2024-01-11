@@ -5,7 +5,7 @@ import '../styles/Resume.css';
 function Resume() {
     return (
         <section id="resume" className="md:pl-[25%] w-full bg-gray-100">
-          <h2 className="text-5xl font-bold text-center text-gray-800 mb-6">Resume</h2>
+          <h2 className="text-5xl mx-auto font-bold text-center text-gray-800 mb-6">Resume</h2>
         <div className="max-w-3xl mx-auto p-4 border border-gray-300 shadow-lg bg-white rounded-lg overflow-auto">
   
           {/* Experience Section */}
@@ -18,25 +18,25 @@ function Resume() {
               <p className="text-sm mb-2">July 2021 - August 2023</p>
               <ul className="list-disc list-inside text-gray-600 mb-3">
                 {/* List of responsibilities and achievements */}
-                <li>Led a cross-functional team in enhancing the Information Barrier (IB) feature enforced across Office 365 applications, impacting 1000+ enterprise administrators by ensuring secure communication.</li>
-                <li>Designed and developed REST APIs hosted on the Security and Compliance (SCC) portal used by enterprise administrators to enforce their organization’s data loss prevention policies across O365 apps.</li>
-                <li>Built data visualizations using SQL and Power BI to depict various product KPIs, i.e. DAU/MAU, retention rate, etc.</li>
-                <li>Spearheaded the migration of IB data to align with EU compliance requirements, supplying data management and system integrity.</li>
-                <li>Enhanced enterprise administrator experience by integrating role- based access for security features provided in the SCC portal.</li>
-                <li>Authored comprehensive troubleshooting guides and technical project designs, progressing incident management and team efficiency.</li>
+                <li>Led a cross-functional team in enhancing the Information Barrier (IB) feature enforced across all Microsoft Office 365 applications, successfully safeguarding communication integrity for 1000+ enterprise administrators.</li>
+                <li>Designed, developed and deployed REST APIs hosted on the Security and Compliance (SCC) portal, improving serviceability by enabling administrators to receive reports on their organization’s data loss prevention (DLP) policies.</li>
+                <li>Constructed data visualizations using SQL and Power BI to depict insightful product KPIs i.e. DAU/MAU, retention rate, etc.</li>
+                <li>Spearheaded the migration of customer data to align with EU compliance requirements for a company-wide Big Data solution, providing data management and system integrity to customers.</li>
+                <li>Built role-based access PowerShell cmdlets in C# used by administrators to create and update their organization’s DLP policies across O365 apps, enhancing user experience and minimizing data loss.</li>
+                <li>Authored comprehensive troubleshooting guides and dev designs, improving incident management and team efficiency.</li>
               </ul>
               <h5 className="text-2xl font-semibold">Software Engineer Intern</h5>
               <p className="text-sm mb-2">May 2020 - August 2020</p>
               <ul className="list-disc list-inside text-gray-600 mb-3">
                 {/* List of responsibilities and achievements */}
-                <li>Developed a feature hosted on the SCC portal used by administrators for ML data classification label testing, generating personalized data to improve machine learning model accuracy for custom sensitivity labels.</li>
+                <li>Developed a React App hosted on the SCC portal for ML data classification testing, generating personalized and realistic test data used both internally and externally to improve machine learning model accuracy for custom sensitivity labels.</li>
               </ul>
               <h5 className="text-2xl font-semibold">Product Management and Software Engineer Intern</h5>
               <p className="text-sm mb-2">May 2019 - August 2019</p>
               <ul className="list-disc list-inside text-gray-600 mb-3">
                 {/* List of responsibilities and achievements */}
                 <li>Balanced dual roles and lead efforts to improve web performance and SEO on azure.microsoft.com.</li>
-                <li>Implemented an optimal cache control policy and reduced page load times as well as the DOM size by 50%.</li>
+                <li>Decreased page load times by 50%, reduced the DOM size by 30%, and implemented an optimal cache control policy.</li>
               </ul>
             </div>
             <div className="mb-4">
@@ -45,7 +45,7 @@ function Resume() {
               <p className="text-sm mb-2">July 2021 - August 2023</p>
               <ul className="list-disc list-inside text-gray-600 mb-3">
                 {/* List of responsibilities and achievements */}
-                <li>Guided students through the Project: Design, Development, and Documentation of Web Applications course, providing hands-on support and constructive feedback.</li>
+                <li>Guided students through a comprehensive Project: Design, Development, and Documentation of Web Applications course, delivering hands-on support and constructive feedback with Ruby on Rails, Git, HTML, CSS and JavaScript.</li>
               </ul>
               <h5 className="text-2xl font-semibold">Data Chair</h5>
               <p className="text-sm mb-2">January 2019 - May 2021</p>
@@ -60,13 +60,13 @@ function Resume() {
               <p className="text-sm mb-2">May 2018 - August 2018</p>
               <ul className="list-disc list-inside text-gray-600 mb-3">
                 {/* List of responsibilities and achievements */}
-                <li>Developed a Python module for automating test case execution, uncovering security vulnerabilities in Rockwell controllers.</li>
+                <li>Implemented CI/CD pipelines using Python to automate robust security testing on Rockwell controllers, exposing any potential security vulnerabilities.</li>
               </ul>
               <h5 className="text-2xl font-semibold">Software Engineer Intern</h5>
               <p className="text-sm mb-2">May 2017 - August 2017</p>
               <ul className="list-disc list-inside text-gray-600 mb-10">
                 {/* List of responsibilities and achievements */}
-                <li>Automated LED light testing on controllers, streamlining the testing process and contributing to product quality assurance.</li>
+                <li>Automated LED light testing on controllers, streamlining the product quality assurance testing process.</li>
               </ul>
             </div>
           </div>
