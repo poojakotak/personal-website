@@ -1,6 +1,6 @@
 /* src/styles/Resume.css */
 
-@media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     #resume {
       padding: 1em;
     }

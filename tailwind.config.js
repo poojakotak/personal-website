@@ -4,6 +4,7 @@ module.exports = {
     "./src/components/About.js",
     "./src/components/Contact.js",
     "./src/components/Header.js",
+    "./src/components/Hobbies.js",
     "./src/components/Portfolio.js",
     "./src/components/Resume.js"
   ],
