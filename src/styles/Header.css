@@ -1,31 +1,79 @@
 /* src/styles/Header.css */
-  
-  /* Responsive adjustments for smaller screens */
-  @media (max-width: 768px) {
-    nav {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    /* Add styles for collapsed menu */
-  }
-  
 
-  @media screen and (max-width: 600px) {
-    nav {
-      padding: 0.5em; /* Reduced padding for smaller screens */
-    }
-  
-    nav ul {
-      flex-direction: column; /* Stack the links vertically */
-      align-items: center;
-    }
-  
-    nav ul li {
-      margin-bottom: 0.5em; /* Add space between vertically stacked links */
-    }
-  
-    nav ul li a {
-      font-size: 1.2em; /* Increase font size for better readability on small screens */
-    }
+/* General Styles for Header */
+header {
+  z-index: 1000; /* Ensure the header is above other content */
+  transition: width 0.3s ease; /* Smooth transition for width changes */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  header {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Adjust height automatically */
+    position: fixed; /* Keep it fixed at the top */
   }
+
+  nav {
+    flex-direction: column; /* Stack the links vertically */
+    align-items: center;
+    justify-content: start; /* Align items to the start of the flex container */
+    padding-top: 60px; /* Add padding to avoid content being hidden behind the header */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack the links vertically */
+  }
+
+  nav ul li {
+    margin: 0; /* Remove margin for list items */
+  }
+
+  nav ul li a {
+    font-size: 1em; /* Adjust font size for mobile */
+    padding: 10px 15px; /* Add padding for touch targets */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Further adjustments for even smaller screens */
+  nav ul li a {
+    font-size: 0.9em; /* Slightly smaller font size */
+  }
+}
+
+/* src/styles/Header.css */
+
+/* ... existing styles ... */
+
+/* Hamburger Icon */
+.hamburger-icon {
+  /* Add styles for your hamburger icon */
+  /* Example: */
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.hamburger-icon::before { top: -10px; }
+.hamburger-icon::after { top: 10px; }
+
+/* Adjust menu display on smaller screens */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
