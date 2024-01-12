@@ -38,15 +38,15 @@ function Portfolio() {
   ];
 
   return (
-    <section id="portfolio" className="md:pl-[25%] w-full h-screen bg-gray-100 flex items-center justify-center">
+    <section id="portfolio" className="md:pl-[25%] w-full h-screen bg-stone-100 flex items-center justify-center">
       <div className="max-w-3xl mx-auto p-4 text-center">
-        <h2 className="text-5xl font-bold text-gray-800 mb-6">Portfolio</h2>
+        <h2 className="text-5xl font-bold text-stone-600 mb-6">Portfolio</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {portfolioItems.map((item, index) => (
             <div key={index} className="bg-white p-4 shadow-lg rounded-lg cursor-pointer" onClick={() => openModal(item)}>
               <img src={item.image} alt={item.title} className="w-full h-40 object-cover rounded-t-lg" />
-              <h3 className="text-xl font-semibold mt-2">{item.title}</h3>
-              <p className="text-gray-600">{item.description}</p>
+              <h3 className="text-xl font-semibold mt-2 text-stone-400">{item.title}</h3>
+              <p className="text-stone-600">{item.description}</p>
             </div>
           ))}
         </div>
@@ -56,22 +56,22 @@ function Portfolio() {
     {isModalOpen && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-10">
             <div className="bg-white p-4 rounded-lg max-w-xl w-full">
-              <h3 className="text-xl font-semibold">{selectedItem.title}</h3>
+              <h3 className="text-xl font-semibold text-stone-500">{selectedItem.title}</h3>
               <p>{selectedItem.detailed_description}</p>
               {selectedItem.product_link && (
-                <a href={selectedItem.product_link} target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700 block mt-2">View Product Brief for the engineering team</a>
+                <a href={selectedItem.product_link} target="_blank" rel="noreferrer" className="text-stone-500 hover:text-blue-700 block mt-2">View Product Brief for the engineering team</a>
               )}
               {selectedItem.design_link && (
-                <a href={selectedItem.design_link} target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700 block mt-2">View Design Brief for the design team</a>
+                <a href={selectedItem.design_link} target="_blank" rel="noreferrer" className="text-stone-500 hover:text-blue-700 block mt-2">View Design Brief for the design team</a>
               )}
               {selectedItem.delivery_link && (
-                <a href={selectedItem.delivery_link} target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700 block mt-2">View Delivery Plan for the marketing and customer experience teams</a>
+                <a href={selectedItem.delivery_link} target="_blank" rel="noreferrer" className="text-stone-500 hover:text-blue-700 block mt-2">View Delivery Plan for the marketing and customer experience teams</a>
               )}
               {selectedItem.github_link && (
-                <a href={selectedItem.github_link} target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700 block mt-2">View GitHub</a>
+                <a href={selectedItem.github_link} target="_blank" rel="noreferrer" className="text-stone-500 hover:text-blue-700 block mt-2">View GitHub</a>
               )}
               <div className="mt-4">
-                <button onClick={closeModal} className="bg-red-500 text-white px-4 py-2 rounded block w-full">Close</button>
+                <button onClick={closeModal} className="bg-orange-500 text-white px-4 py-2 rounded block w-full">Close</button>
               </div>
             </div>
           </div>

@@ -27,15 +27,15 @@ function Hobbies() {
   ];
 
   return (
-    <section id="hobbies" className="md:pl-[25%] w-full h-screen bg-gray-100 flex items-center justify-center">
+    <section id="hobbies" className="md:pl-[25%] w-full h-screen bg-stone-100 flex items-center justify-center">
     <div className="max-w-3xl mx-auto p-4 text-center">
-      <h2 className="text-5xl font-bold text-gray-800 mb-6">Hobbies</h2>
+      <h2 className="text-5xl font-bold text-stone-600 mb-6">Hobbies</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {hobbies.map((hobby, index) => (
           <div key={index} className="bg-white p-4 shadow rounded-lg">
-            <h3 className="text-xl font-semibold mb-2">{hobby.name}</h3>
-            <p className="text-gray-600 mb-3">{hobby.description}</p>
-            <a href={hobby.trackerLink} target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700">Track my {hobby.name}</a>
+            <h3 className="text-xl text-stone-400 font-semibold mb-2">{hobby.name}</h3>
+            <p className="text-stone-600 mb-3">{hobby.description}</p>
+            <a href={hobby.trackerLink} target="_blank" rel="noreferrer" className="text-slate-500 hover:text-blue-700">Track my {hobby.name}</a>
           </div>
         ))}
       </div>
